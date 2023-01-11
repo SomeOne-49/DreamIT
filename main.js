@@ -1,9 +1,11 @@
 //Todo: Add & Remove "active" Class :
 const navList = document.querySelectorAll("nav .navbar-nav .nav-link");
+const navbarcollapse = document.querySelector(".navbar-collapse");
 navList.forEach((e) => {
   e.addEventListener("click", () => {
     navList.forEach((el) => el.classList.remove("active"));
     e.classList.add("active");
+    navbarcollapse.classList.remove('show')
   });
 });
 //Todo: Changing The Position Of The Axes :
@@ -16,7 +18,7 @@ navBtn.onmouseover = function (e) {
 };
 
 //Todo: Add "open" To Hamburger Menu :
-const menuBtn = document.querySelector(".menu-box");
+// const menuBtn = document.querySelector(".menu-box");
 let isOpen = false;
 
 menuBtn.addEventListener("click", () => {
