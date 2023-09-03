@@ -18,7 +18,7 @@ navBtn.onmouseover = function (e) {
 };
 
 //Todo: Add "open" To Hamburger Menu :
-// const menuBtn = document.querySelector(".menu-box");
+const menuBtn = document.querySelector(".menu-box");
 let isOpen = false;
 
 menuBtn.addEventListener("click", () => {
